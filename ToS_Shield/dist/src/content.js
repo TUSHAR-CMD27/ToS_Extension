@@ -1,0 +1,1 @@
+console.log("🛡️ ToS Shield: Content Script Active");const c=()=>(document.querySelector("main")||document.body).innerText.substring(0,3e3);chrome.runtime.onMessage.addListener((t,e,n)=>{if(t.action==="EXTRACT_TEXT"){const o=c();console.log("📑 Text extracted, sending to background..."),n({text:o})}});
